@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+#travels-container {
+    min-height: 60vw;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #fff;
+    text-shadow: thistle;
+    font-size: 40px;
+    font-weight: 500;
+}

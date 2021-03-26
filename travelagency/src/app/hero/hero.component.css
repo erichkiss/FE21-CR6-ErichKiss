@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+#hero-banner {
+    min-height: 40vw;
+}
+
 h1 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    color: rgb(91, 167, 230);
+    color: #fff;
     text-shadow: thistle;
     font-size: 40px;
     font-weight: 500;
@@ -12,7 +16,7 @@ h1 {
 h4 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    color: rgb(91, 167, 230);
+    color: #fff;
     text-shadow: thistle;
     font-size: 30px;
     font-weight: 200;

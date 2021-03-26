@@ -20,7 +20,7 @@ export const travels = [
 },{
     destination: 'Amsterdam',
     price: 400,
-    description: 'Do not fall into the canal after you somked some w**d',
+    description: 'Do not fall into the canal after you smoked some w**d',
     startDate: '16.08.2021',
     duration: '1 weekend'
 },{
