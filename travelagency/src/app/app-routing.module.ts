@@ -7,7 +7,7 @@ import { TravelsListComponent } from './travels-list/travels-list.component';
 
 const routes: Routes = [
   {
-    path:"", component: HomeComponent
+    path:"", component: HomeComponent // adding the routing to navigate all pages
   },
   {
     path:"travels", component: TravelsListComponent

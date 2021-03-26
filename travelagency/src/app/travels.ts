@@ -1,3 +1,5 @@
+// My array of objects holding all travel information
+
 export const travels = [
 {
     destination: 'Budapest',

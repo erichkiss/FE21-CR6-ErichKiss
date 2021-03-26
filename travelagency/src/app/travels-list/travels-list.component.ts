@@ -15,7 +15,7 @@ export class TravelsListComponent implements OnInit {
   addToCart(travel) {
     window.alert('Your travel has been added to the cart');
     this.cartService.addToCart(travel);
-  }
+  } // same as PreWork e-commerce page
   
   ngOnInit(): void {
   }

@@ -21,3 +21,5 @@ export class CartService {
     return this.items;
   }
 }
+
+// I used the same methods as in our PreWork e-commerce page

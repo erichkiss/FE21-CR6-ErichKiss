@@ -3,14 +3,14 @@
         <h1>Our current travels</h1>
     </div>
     <div class="row">
-        <div *ngFor="let travel of listTravels" class="col-4">
+        <div *ngFor="let travel of listTravels" class="col-4"> <!-- looping through all travel objects and printing the cards -->
             <div class="card m-1" style="height: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">{{travel.destination}}</h5>
                     <p class="card-text">{{travel.description}}</p>
                     <p class="card-text fw-bold">Price: {{travel.price}} € -> {{travel.duration}}</p>
                     <p class="card-text">Starting: {{travel.startDate}}</p>
-                    <a class="btn btn-primary" (click)="addToCart(travel)">Book</a>
+                    <a class="btn btn-primary" (click)="addToCart(travel)">Book</a> <!-- In case of clicking the book button, we add it to the cart -->
                 </div>
             </div>
 

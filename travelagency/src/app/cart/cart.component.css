@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+/* just simple css for font colors  */
+
 #cart-container {
-    min-height: 40vw;
+    min-height: 70vh;
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
@@ -13,6 +15,8 @@
 .cart-total {
     color: red;
 }
+
+/* to toggle the visibilty of the discount  */
 
 .invisible {
     visibility: hidden;

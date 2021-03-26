@@ -1,6 +1,8 @@
+<!-- Displaying the cart  -->
+
 <div id="cart-container" class="container">
     <h1>Cart</h1>
-    <ng-template [ngIf]="cart.length > 0" [ngIfElse]="empty">
+    <ng-template [ngIf]="cart.length > 0" [ngIfElse]="empty"> <!-- Checking if cart is empty -->
         <div class="cart-item" *ngFor="let item of cart">
             <div class="card">
                 <div class="card-body row">
@@ -9,9 +11,10 @@
                 </div>
               </div>           
         </div>
-        <div class="card cart-total">
+        <div class="card cart-total"> <!-- row for total sum / discount -->
             <div class="card-body row">
-              <p class="card-text col-3 offset-6" [class.invisible]="cartTotal < 200">- Discount {{cartDiscountValue}}% = {{cartDiscount}} €</p>
+              <p class="card-text col-3 offset-6" [class.invisible]="cartTotal < 200">- Discount {{cartDiscountValue}}% = {{cartDiscount}} €</p> <!-- toggling the class -->
+              <!--in case of no discount, the class invisible is added, and it includes style visibilty: hidden-->
               <p class="card-text col-3">Total {{cartTotal}} €</p>                    
             </div>
           </div>    
