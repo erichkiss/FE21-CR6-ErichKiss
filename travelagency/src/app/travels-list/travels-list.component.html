@@ -10,7 +10,7 @@
                     <p class="card-text">{{travel.description}}</p>
                     <p class="card-text fw-bold">Price: {{travel.price}} € -> {{travel.duration}}</p>
                     <p class="card-text">Starting: {{travel.startDate}}</p>
-                    <a href="#" class="btn btn-primary">Book</a>
+                    <a class="btn btn-primary" (click)="addToCart(travel)">Book</a>
                 </div>
             </div>
 

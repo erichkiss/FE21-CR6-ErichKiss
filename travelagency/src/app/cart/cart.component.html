@@ -1,0 +1,28 @@
+<div id="cart-container" class="container">
+    <h1>Cart</h1>
+    <ng-template [ngIf]="cart.length > 0" [ngIfElse]="empty">
+        <div class="cart-item" *ngFor="let item of cart">
+            <div class="card">
+                <div class="card-body row">
+                  <p class="card-text col-3">Destination {{item.destination}}</p>
+                  <p class="card-text col-3 offset-6">Price {{item.price}} €</p>                    
+                </div>
+              </div>           
+        </div>
+        <div class="card cart-total">
+            <div class="card-body row">
+              <p class="card-text col-3 offset-6" [class.invisible]="cartTotal < 200">- Discount {{cartDiscountValue}}% = {{cartDiscount}} €</p>
+              <p class="card-text col-3">Total {{cartTotal}} €</p>                    
+            </div>
+          </div>    
+          <div class="card"><button class="btn btn-light my-2 my-sm-0" type="submit" (click)="clear()">Clear cart</button></div>
+    </ng-template>
+
+    <ng-template #empty> 
+        <div class="card cart-item">
+            <div class="card-body row">
+              <p class="card-text col-3 offset-5">Cart is empty</p>                    
+            </div>
+          </div>       
+    </ng-template>   
+</div>

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+#cart-container {
+    min-height: 40vw;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.cart-item {
+    color: black;
+}
+
+.cart-total {
+    color: red;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
